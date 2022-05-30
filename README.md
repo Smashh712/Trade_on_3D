@@ -1,4 +1,4 @@
-# trade_flatform
+# trade_platform
 
 A new Flutter project.
 
