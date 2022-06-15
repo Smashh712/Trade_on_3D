@@ -70,7 +70,7 @@ class ImageSelect extends StatelessWidget {
                     },
                     child: Container(
                         child: Stack(children: [
-                      Image.file(File(images[index] ?? "")),
+                      Image.file(File(images[index] ?? ""), fit: BoxFit.fitHeight),
                       Container(
                         decoration: BoxDecoration(
                             color: selection[index]

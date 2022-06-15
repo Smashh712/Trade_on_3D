@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 
 class ProductData {
   int? id;
-  String image;
+  List<String>? images;
   String? title;
+  String? category;
   String? content;
   int? price;
   int? seller;
 
-  ProductData({ 
-    this.id, 
-    this.image = "", 
-    this.title, 
-    this.content, 
-    this.price, 
-    this.seller});
+  ProductData(
+      {this.id,
+      this.images,
+      this.title,
+      this.category,
+      this.content,
+      this.price,
+      this.seller});
 }

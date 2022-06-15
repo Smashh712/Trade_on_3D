@@ -3,12 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 import './pages/home.dart';
+import './pages/searchPage.dart';
+import './pages/mypage.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-const seedColor = Color.fromARGB(172, 255, 140, 0);
+const seedColor = Color.fromARGB(172, 81, 255, 0);
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -18,8 +20,27 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: seedColor),
-          textTheme: GoogleFonts.notoSansNKoTextTheme(
-            Theme.of(context).textTheme,
+          textTheme: TextTheme(
+            headline1: GoogleFonts.ibmPlexSansKr(
+              fontSize: 24,
+              fontWeight: FontWeight.w700,
+              color: Colors.black,
+            ),
+            headline2: GoogleFonts.ibmPlexSansKr(
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+            subtitle1: GoogleFonts.ibmPlexSansKr(
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: Colors.black
+            ),
+            subtitle2: GoogleFonts.ibmPlexSansKr(
+              fontSize: 14,
+              fontWeight: FontWeight.normal,
+              color: Colors.grey,
+            )
           ),
         ),
         builder: EasyLoading.init(),
@@ -43,15 +64,15 @@ class _MainState extends State<Main> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: "Home",
+              label: "홈",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
-              label: "Search",
+              label: "검색",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_outline),
-              label: "MyPage",
+              label: "내정보",
             ),
           ],
           currentIndex: _selectedIndex,
@@ -67,4 +88,4 @@ class _MainState extends State<Main> {
   }
 }
 
-List _pageOption = [Home(), Text("검색 화면"), Text("마이페이지")];
+List _pageOption = [Home(), SearchPage(), Mypage()];
