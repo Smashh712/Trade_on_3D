@@ -8,4 +8,12 @@
   <img src="https://user-images.githubusercontent.com/74997185/174295643-c5e1d9db-5ae7-400c-817b-0abcf9690479.gif">
 </p>
 
-<img width="1154" alt="image" src="https://user-images.githubusercontent.com/74997185/174297161-7139e87a-e578-44c1-8e7c-40f8b71f03ae.png">
+## Requirements
+
+- An __NVIDIA GPU__; tensor cores increase performance when available. All shown results come from an RTX 3090.
+- A __C++14__ capable compiler. The following choices are recommended and have been tested:
+  - __Windows:__ Visual Studio 2019
+  - __Linux:__ GCC/G++ 7.5 or higher
+- __[CUDA](https://developer.nvidia.com/cuda-toolkit) v10.2 or higher__ and __[CMake](https://cmake.org/) v3.21 or higher__.
+
+- [Nvidia/Instant-NeRF is Needed](https://nvlabs.github.io/instant-ngp).
