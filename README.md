@@ -1,6 +1,6 @@
-<h2 align="middle">Nerf를 활용한 3D 중고거래 앱</h2>
-<p align="middle">충북대학교 컴퓨터공학과 2022 캡스톤 디자인 7조</p>
-<p align="middle">유호현 장혁순 유지원 딩하오</p>
+<h2 align="middle">3D Trading app using NeRF(Neural Radiance Field)</h2>
+<p align="middle">Chungbuk National Univ. 2022 Capstone Design team 7</p>
+<p align="middle">유호현 장혁순 유지원 Ding Hao</p>
 
 <br>
 <p align="middle">
